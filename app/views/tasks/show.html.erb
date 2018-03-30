@@ -1,0 +1,5 @@
+<h1>id: <%= @task.id %>のタスク記録ページ</h1>
+<p><%= @task.content %></p>
+<%= link_to '記録一覧に戻る', tasks_path %>
+<%= link_to '記録を編集する', edit_task_path(@task) %>
+<%= link_to '記録を削除する', @task, method :delete, data: { confirm: '本当に削除してよろしいですか？' } %>

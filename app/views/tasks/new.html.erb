@@ -1,0 +1,9 @@
+<h1>終えたタスクを記録しよう。</h1>
+<%= form_for(@task) do |f| %>
+  <%= f.label :content, 'タスク記録'%>
+  <%= f.text_field :content%>
+  <%= f.submit '記録' %>
+  
+<% end %>
+
+<%= link_to '記録一覧に戻る', tasks_path %>

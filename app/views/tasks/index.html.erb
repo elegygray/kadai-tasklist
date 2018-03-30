@@ -1,0 +1,8 @@
+<h1>終了タスクの記録一覧</h1>
+<ul>
+  <% @tasks.each do |task|%>
+    <li><%= link_to task.id, task %>: <%= task.content %></li>
+  <% end %>
+</ul>
+
+<%= link_to '新しく記録する', new_task_path %>
