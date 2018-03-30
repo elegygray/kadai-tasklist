@@ -1,7 +1,4 @@
 <h1>id: <%= @task.id%>のタスク記録編集ページ</h1>
-<%= form_for(@task) do |f| %>
-  <%= f.label :content, 'タスク記録' %>
-  <%= f.text_field :content %>
-<% end %>
+<%= render 'form', task: @task %>
 
 <%= link_to '記録一覧に戻る', tasks_path %>
